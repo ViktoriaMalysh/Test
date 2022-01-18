@@ -14,11 +14,10 @@
 .spanItemH {
   /* text-align: center; */
   font-size: 1.5em;
-  font-weight:400;
+  font-weight: 400;
   /* background-color: aquamarine; */
   color: rgb(255, 255, 255);
   font-family: inherit;
-
 }
 
 .divHeader {
@@ -30,9 +29,11 @@
 
 .aOne,
 .aTwo,
-.aTree, .aFour, .aFive {
+.aTree,
+.aFour,
+.aFive {
   text-decoration: none;
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-family: inherit;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -55,42 +56,65 @@
 
   content: " ";
   grid-area: line;
-
 }
 
 .aTwo {
   grid-area: link1;
   height: 3em;
-  align-items: center;  
-
+  align-items: center;
 }
 
 .aOne {
   grid-area: home;
   height: 3em;
-  align-items: center;  
+  align-items: center;
 }
 .aTree {
   height: 3em;
-  align-items: center;  
+  align-items: center;
   grid-area: link2;
 }
 .aFour {
   grid-area: login;
   height: 3em;
-  align-items: center;  
+  align-items: center;
 }
 .aFive {
   height: 3em;
-  align-items: center;  
+  align-items: center;
   grid-area: register;
 }
 
-
-
-.rides{
+.rides {
   /* padding: 20em; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". accordion accordion accordion .";
 }
+
+.showRides {
+  grid-area: accordion;
+}
+
+.table-race{
+  text-align: left;
+  /* padding: 1em; */
+  box-sizing: border-box;
+  min-width: 20em;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+table td {
+  width: 100%;
+}
+
+
+
+
+
 
 
 
@@ -116,7 +140,6 @@
 
 .App {
   text-align: center;
-
 }
 
 .App-logo {
